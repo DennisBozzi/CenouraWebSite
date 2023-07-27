@@ -252,10 +252,32 @@ body {
     text-align: center;
 }
 
+.seta p {
+    font-size: 18px;
+}
+
 .seta a {
     text-decoration: none;
     color: #F98E3C;
 }
+
+/* Animação Imagem Principal */
+
+.imgPrincipal{
+    transition: 0.5s;
+}
+
+.imgPrincipal:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+@keyframes balanco {
+    0% {}
+
+    100% {}
+}
+
 
 /* BootsTrap */
 .carousel-control-next,
