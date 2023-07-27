@@ -6,7 +6,7 @@ body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* Menu */
@@ -96,7 +96,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 12rem 0;
+    padding: 8rem 0 6rem;
 }
 
 .carrossel {
@@ -118,7 +118,7 @@ body {
     flex-direction: column;
 }
 
-.produtos1{
+.produtos1 {
     display: flex;
     gap: 50px;
     justify-content: center;
@@ -126,7 +126,7 @@ body {
     padding: 4rem 0 2rem;
 }
 
-.produtos2{
+.produtos2 {
     display: flex;
     gap: 50px;
     justify-content: center;
@@ -147,9 +147,114 @@ body {
     border-radius: 15px;
 }
 
-.produto:hover{
+.produto:hover {
     transform: scale(1.03);
     cursor: pointer;
+}
+
+
+
+/* ---- Salmao ---- */
+
+.body-salmao {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.compra {
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dadosCompra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    max-width: 500px;
+}
+
+.valor {
+    display: flex;
+    flex-direction: column;
+}
+
+.dadosCompra h1 {
+    font-size: 38px;
+    margin: 0 0 8px 0;
+}
+
+.dadosCompra h2 {
+    color: gray;
+}
+
+.dadosCompra h3 {
+    font-size: 32px;
+    margin: 0 16px;
+}
+
+.dadosCompra a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border: 1px solid unset;
+    text-align: center;
+    border-radius: 45px;
+    transition: 0.5s;
+    background-color: #F98E3C;
+    color: white;
+}
+
+.dadosCompra a:hover {
+    background-color: #F98E3Caa;
+}
+
+.opcoesCompra {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.opcoesCompra label {
+    width: 46%;
+    border-radius: 45px;
+}
+
+.informacoesCompra {
+    width: 980px;
+    text-align: justify;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #6EC61C44;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+}
+
+.informacoesCompra h1 {
+    font-size: 32px;
+    color: gray;
+}
+
+.informacoesCompra p {
+    font-size: 16px;
+}
+
+.seta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10rem;
+    text-align: center;
+}
+
+.seta a {
+    text-decoration: none;
+    color: #F98E3C;
 }
 
 /* BootsTrap */
@@ -160,8 +265,17 @@ body {
     background-size: 50px;
 }
 
-/* ---- Salmao ---- */
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: white;
+    background-color: #6EC61C;
+    border-color: #6EC61C;
+}
 
-.body-salmao {
-    height: unset;
+.btn-secondary {
+    background-color: gray;
+    border-color: gray;
 }
