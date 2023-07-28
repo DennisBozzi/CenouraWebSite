@@ -266,7 +266,6 @@ body {
 .imgPrincipal {
     animation-duration: 3s;
     animation-name: animation;
-    animation-timing-function: ;
     animation-iteration-count: infinite;
 }
 
