@@ -263,21 +263,26 @@ body {
 
 /* Animação Imagem Principal */
 
-.imgPrincipal{
-    transition: 0.5s;
+.imgPrincipal {
+    animation-duration: 3s;
+    animation-name: animation;
+    animation-timing-function: ;
+    animation-iteration-count: infinite;
 }
 
-.imgPrincipal:hover {
-    transform: scale(1.01);
-    cursor: pointer;
+@keyframes animation {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
 }
-
-@keyframes balanco {
-    0% {}
-
-    100% {}
-}
-
 
 /* BootsTrap */
 .carousel-control-next,
